@@ -1,0 +1,11 @@
+/** ********************************************** **
+	Styles customized by Wisky's developers
+*************************************************** **/
+
+div.side-nav .select2 ul>li:before {
+	display: none;
+}
+
+section {
+	padding: 40px 0;
+}
