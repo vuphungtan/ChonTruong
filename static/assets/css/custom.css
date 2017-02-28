@@ -9,9 +9,11 @@ div.side-nav .select2 ul>li:before {
 section {
 	padding: 40px 0;
 }
-
+.log-section{
+	padding:70px 0;
+}
 #wrapper {
-	background: url('http://eskipaper.com/images/free-school-wallpaper-1.jpg');
+	background: url('http://www.wallpaperbetter.com/wallpaper/892/524/873/red-wine-autumn-2K-wallpaper.jpg');
 }
 
 #footer, #topBar, .section-smoke .container {
@@ -19,7 +21,7 @@ section {
 }
 
 #footer *, #footer > .copyright {
-	background: none;
+	background: whitesmoke;
 	color: #414141 !important;
 }
 
@@ -28,4 +30,26 @@ section {
 	padding: 30px 25px;
 	background: white;
 	background: rgba(255,255,255,.95);
+}
+.section-edit{
+	padding: 84px 0;
+}
+section.page-header h1{
+	font-size:50px;
+	color:orange;
+}
+register-page{
+
+}
+
+login-page {
+
+
+}
+
+.wishlist table.table-bordered td:last-child {
+	text-align: center;
+}
+.wishlist table.table-bordered td:last-child .fa {
+	color: #F05123;
 }

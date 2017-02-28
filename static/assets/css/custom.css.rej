@@ -1,0 +1,27 @@
+diff a/static/assets/css/custom.css b/static/assets/css/custom.css	(rejected hunks)
+@@ -8,4 +8,24 @@
+ 
+ section {
+ 	padding: 40px 0;
++}
++
++#wrapper {
++	background: url('http://eskipaper.com/images/free-school-wallpaper-1.jpg');
++}
++
++#footer, #topBar, .section-smoke .container {
++	background: rgba(255,255,255,.85);
++}
++
++#footer *, #footer > .copyright {
++	background: none;
++	color: #414141 !important;
++}
++
++.section-smoke .container {
++	border: 1px solid gray;
++	padding: 30px 25px;
++	background: white;
++	background: rgba(255,255,255,.95);
+ }
+\ No newline at end of file
