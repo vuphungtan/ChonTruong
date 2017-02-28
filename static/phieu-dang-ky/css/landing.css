@@ -1,0 +1,437 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans/OPENSANS-LIGHT.TTF');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans/OPENSANS-REGULAR.TTF');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans/OPENSANS-SEMIBOLD.TTF');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans/OPENSANS-BOLD.TTF');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans/OPENSANS-EXTRABOLD.TTF');
+	font-weight: 800;
+}
+/* ======================= COMMON ======================= */
+/* html { background-color: #000; } */
+
+body {
+	font-family: 'OpenSans';
+}
+
+.body-wrapper:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url('../images/lobby-2.html') 50% 50% / cover no-repeat fixed transparent;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: #75caeb;
+	cursor: pointer;
+}
+
+.white {
+	color: #fff;
+}
+/* ======================= HEADER ======================= */
+
+.logo {
+	text-align: center;
+	height: 100px;
+	margin: 30px 0;
+}
+
+.logo > img {
+	height: 100%;
+	padding: 0 60px;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.left-icon {
+	margin-right: 10px;
+}
+/* ======================= LANDING BODY ======================= */
+
+.panel-transparent {
+	width: 100%;
+	margin-bottom: 15px;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 1px 1px 5px #000;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.panel-transparent .panel-title {
+	margin-bottom: 15px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #333;
+}
+
+.panel-transparent .panel-title label {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.panel-transparent .panel-body {
+	padding: 0;
+}
+
+.panel-transparent .form-control {
+	background-color: #474747;
+	border: none;
+	color: #fff;
+	box-shadow: 1px 1px 0px 1px #3c3c3c inset, -1px -1px 0px 1px #777 inset;
+}
+
+.panel-transparent .btn-group {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.panel-transparent .btn-group .btn {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.separator {
+	position: relative;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.separator:before,
+.separator:after {
+	content: '';
+	width: 40%;
+	height: 0;
+	border-top: 1px solid #fff;
+	position: absolute;
+	top: 50%;
+}
+
+.separator:before {
+	left: 0;
+}
+
+.separator:after {
+	right: 0;
+}
+/* Apps */
+
+.app-list {
+	width: 100%;
+}
+
+.app-list > li {
+	width: 100%;
+	height: 70px;
+	background-color: #fff;
+	color: #474747;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	position: relative;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.app-list > li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 60px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position: center;
+}
+
+.app-list > li:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 60px;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-right: 20px solid;
+}
+
+.app-list > li.purple:before {
+	background-color: #7b0046;
+}
+
+.app-list > li.purple:after {
+	border-right-color: #7b0046;
+}
+
+.app-list > li.brown:before {
+	background-color: #7d4900;
+}
+
+.app-list > li.brown:after {
+	border-right-color: #7d4900;
+}
+
+.icon-palm:before {
+	background-image: url('../images/icon-palm.html');
+}
+
+.icon-survey:before {
+	background-image: url('../images/icon-clipboard.html');
+}
+
+.app-list > li .app-name {
+	color: #474747;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.app-list > li .app-name:hover {
+	text-decoration: none;
+}
+/* ======================= PROMOTION PAGE ======================= */
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	border: none;
+}
+
+.msg-container {
+	float: right;
+}
+
+.msg-container label {
+	padding: 12px;
+	font-weight: bold;
+}
+
+#msgSuccess {
+	display: none;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 15px 0;
+}
+
+.question-container {
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.question-container > * {
+	text-align: left;
+}
+
+.question-container h2 {
+	margin-top: 0;
+	padding: 0 10px;
+	color: #fff;
+}
+
+.question-container .answer-list {
+	font-size: 16px;
+}
+
+.question-container .answer-list > li > a {
+	padding: 10px 15px;
+	display: block;
+	color: #fff;
+	transition: all .2s;
+}
+
+.question-container .answer-list > li > a:hover {
+	text-decoration: none;
+	background: rgba(255,255,255,0.3);
+}
+
+.control-container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.control-container .title {
+	color: #fff;
+	font-weight: 600;
+	margin-top: 0;
+}
+
+video#bgvid {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url(polina.html) no-repeat;
+	background-size: cover;
+}
+/* Smart phones (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+	/* Styles */
+	
+	.logo {
+		height: 50px;
+		margin: 0;
+		padding: 7px;
+	}
+	.btn-social > span {
+		display: none;
+	}
+	.btn-social > .left-icon {
+		margin: 0;
+	}
+	.app-list > li p {
+		display: none;
+	}
+	
+	.navbar-header {
+		float: left;
+	}
+	
+	.form-group {
+		margin-bottom: 10px;
+	}
+	
+	.question-container h2 {
+		font-size: 20px;
+		font-weight: 600;
+	}
+	
+	.question-container .answer-list > li > a {
+		padding: 5px 7px;
+	}
+}
+/* Smart phones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+	/* Styles */
+}
+/* Smart phones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	/* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	/* Styles */
+	
+	.panel-transparent {
+		max-height: 350px;
+	}
+	.panel-transparent .panel-title label {
+		font-size: 24px;
+	}
+	.panel-transparent .form-control,
+	.panel-transparent .btn {
+		height: 40px;
+		font-size: 16px;
+	}
+	.logo {
+		height: 100px;
+		margin: 0;
+	}
+	.navbar-header {
+		float: left;
+	}
+	
+}
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+	
+	.panel-container {
+		padding: 0 100px;
+	}
+	.panel-transparent {
+		margin-bottom: 30px;
+	}
+}
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+	/* Styles */
+	
+	.logo {
+		height: 100px;
+		margin: 30px 0;
+	}
+	.navbar .logo {
+		height: 50px;
+		padding: 5px 0;
+		margin: 0;
+	}
+	.panel-container {
+		padding: 0 50px;
+	}
+	.panel-transparent {
+		max-height: 350px;
+	}
+	.panel-transparent .panel-title label {
+		font-size: 28px;
+	}
+	.panel-transparent .form-control,
+	.panel-transparent .btn {
+		height: 40px;
+		font-size: 16px;
+	}
+	.panel-transparent .btn.btn-lg {
+		height: auto;
+		padding: 20px 22px 18px;
+	}
+}
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+	/* Styles */
+}

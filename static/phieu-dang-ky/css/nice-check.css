@@ -1,0 +1,113 @@
+/* Base for label styling */
+
+.ss-choice-item label input:not(:checked),
+.ss-choice-item label input:checked {
+	position: absolute;
+	left: -9999px;
+}
+
+.ss-choice-item label input:focus {
+	outline: none !important;
+}
+
+.ss-choice-item label input:not(:checked) + span,
+.ss-choice-item label input:checked + span {
+	position: relative;
+	padding-left: 40px;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+/* checkbox aspect */
+
+.ss-choice-item label input:not(:checked) + span:before,
+.ss-choice-item label input:checked + span:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	background: #9eb9d0;
+	border-radius: 50%;
+}
+
+.ss-choice-item label input[type="checkbox"]:not(:checked) + span:before,
+.ss-choice-item label input[type="checkbox"]:checked + span:before {
+	border-radius: 3px;
+}
+
+.ss-choice-item label input:checked + span:before {
+	background-color: #337ab7;
+}
+/* checked mark aspect */
+
+.ss-choice-item label input:not(:checked) + span:after,
+.ss-choice-item label input:checked + span:after {
+	content: '✔';
+	position: absolute;
+	top: 0;
+	left: 9px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	transition: all .1s;
+}
+/* checked mark aspect changes */
+
+.ss-choice-item label input:not(:checked) + span:after {
+	opacity: 0;
+	transform: scale(0);
+}
+
+.ss-choice-item label input:checked + span:after {
+	opacity: 1;
+	transform: scale(1);
+}
+/* disabled checkbox */
+
+.ss-choice-item label input:disabled:not(:checked) + span:before,
+.ss-choice-item label input:disabled:checked + span:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+
+.ss-choice-item label input:disabled:checked + span:after {
+	color: #999;
+}
+
+.ss-choice-item label input:disabled + span {
+	color: #aaa;
+}
+/* hover style just for information */
+
+/*
+.ss-choice-item label input:not(:checked) + label,
+.ss-choice-item label input:checked + label {
+	height: 30px;
+	line-height: 18px;
+	padding-left: 23px;
+	position: relative;
+	top: 7px;
+}
+
+.ss-choice-item label input:not(:checked) + label:before,
+.ss-choice-item label input:checked + label:before {
+	width: 18px;
+	height: 18px;
+}
+
+.ss-choice-item label input:not(:checked) + label:after,
+.ss-choice-item label input:checked + label:after {
+	line-height: 18px;
+	left: 3px;
+}
+
+.ss-choice-item label input:checked + label:after {
+	opacity: 1;
+	transform: scale(.8);
+}
+*/
