@@ -1,9 +1,11 @@
 /** ********************************************** **
 	Styles customized by Wisky's developers
 *************************************************** **/
-
-div.side-nav .select2 ul>li:before {
-	display: none;
+@media only screen and (max-width: 992px) {
+	/* Force 60px */
+	#header #topNav a.logo>img {
+		max-height:30px !important;
+	}
 }
 
 section {
@@ -15,7 +17,9 @@ section {
 #wrapper {
 	background: url('http://www.wallpaperbetter.com/wallpaper/892/524/873/red-wine-autumn-2K-wallpaper.jpg');
 }
-
+#wrapper> #login-wrap{
+	background: whitesmoke;
+}
 #footer, #topBar, .section-smoke .container {
 	background: rgba(255,255,255,.85);
 }
@@ -52,4 +56,41 @@ login-page {
 }
 .wishlist table.table-bordered td:last-child .fa {
 	color: #F05123;
+}
+.box-red>div:nth-child(1) {
+	background-color: #489FDF;
+}
+.box-red>div:nth-child(2) {
+	background-color: #F37022;
+}
+.box-red>div:nth-child(3) {
+	background-color: #1D9E74;
+}
+.box-red>div:nth-child(1):hover{
+	cursor:pointer;
+	opacity:0.85;
+}
+.box-red>div:nth-child(2):hover{
+	cursor:pointer;
+	opacity:0.85;
+}
+.box-red>div:nth-child(3):hover{
+	cursor:pointer;
+	opacity:0.85;
+}
+.non-orange{
+	color:unset;
+}
+
+.box-features{
+	height:329px;
+	font-size:18px;
+}
+.box-features h2 {
+	height: 100px;
+	overflow: hidden;
+	font-weight:unset;
+}
+.box-features p{
+	margin-bottom: 0px;
 }
